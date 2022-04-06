@@ -24,13 +24,10 @@ scuberGreetingForFeet(2501);
 function ternaryCheckCity(someCity) {
   
   
-  (someCity === 'NYC') ? console.log('Ok, sounds good.') : null;
-  (someCity !== 'NYC') ? console.log('No go.') :null;
+  return someCity === 'NYC' ? 'Ok, sounds good.' :'No go.' 
   
 
 }
-ternaryCheckCity('NYC');
-ternaryCheckCity('Pittsburgh');
 
 
 function switchOnCharmFromTip(someTip){
