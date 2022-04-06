@@ -2,18 +2,18 @@
   "stats": {
     "suites": 4,
     "tests": 9,
-    "passes": 1,
+    "passes": 4,
     "pending": 0,
-    "failures": 8,
-    "start": "2022-04-06T09:45:34.037Z",
-    "end": "2022-04-06T09:45:34.403Z",
-    "duration": 366
+    "failures": 5,
+    "start": "2022-04-06T10:55:43.447Z",
+    "end": "2022-04-06T10:55:43.817Z",
+    "duration": 370
   },
   "tests": [
     {
       "title": "gives customers a free sample if the ride is less than or equal to 400 feet",
       "fullTitle": "index.js scuberGreetingForFeet() gives customers a free sample if the ride is less than or equal to 400 feet",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -22,36 +22,21 @@
       "fullTitle": "index.js scuberGreetingForFeet() charges 20 dollars for a distance between 400 and 2000 feet",
       "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "message": "expected undefined to equal 'That will be twenty bucks.'",
-        "showDiff": true,
-        "expected": "That will be twenty bucks.",
-        "stack": "AssertionError: expected undefined to equal 'That will be twenty bucks.'\n    at Context.<anonymous> (test/indexTest.js:8:46)\n    at processImmediate (node:internal/timers:466:21)"
-      }
+      "err": {}
     },
     {
       "title": "charges 30 dollars for a distance over 2000 feet",
       "fullTitle": "index.js scuberGreetingForFeet() charges 30 dollars for a distance over 2000 feet",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
-      "err": {
-        "message": "expected undefined to equal 'I will gladly take your thirty bucks.'",
-        "showDiff": true,
-        "expected": "I will gladly take your thirty bucks.",
-        "stack": "AssertionError: expected undefined to equal 'I will gladly take your thirty bucks.'\n    at Context.<anonymous> (test/indexTest.js:12:46)\n    at processImmediate (node:internal/timers:466:21)"
-      }
+      "err": {}
     },
     {
       "title": "does not allow rides over 2500 feet",
       "fullTitle": "index.js scuberGreetingForFeet() does not allow rides over 2500 feet",
       "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "message": "expected undefined to equal 'No can do.'",
-        "showDiff": true,
-        "expected": "No can do.",
-        "stack": "AssertionError: expected undefined to equal 'No can do.'\n    at Context.<anonymous> (test/indexTest.js:16:46)\n    at processImmediate (node:internal/timers:466:21)"
-      }
+      "err": {}
     },
     {
       "title": "returns \"Ok, sounds good.\" when the city is NYC",
@@ -59,10 +44,8 @@
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "message": "expected undefined to equal 'Ok, sounds good.'",
-        "showDiff": true,
-        "expected": "Ok, sounds good.",
-        "stack": "AssertionError: expected undefined to equal 'Ok, sounds good.'\n    at Context.<anonymous> (test/indexTest.js:22:42)\n    at processImmediate (node:internal/timers:466:21)"
+        "stack": "ReferenceError: ternaryCheckCity is not defined\n    at Context.<anonymous> (test/indexTest.js:22:7)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "ternaryCheckCity is not defined"
       }
     },
     {
@@ -71,22 +54,18 @@
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "message": "expected undefined to equal 'No go.'",
-        "showDiff": true,
-        "expected": "No go.",
-        "stack": "AssertionError: expected undefined to equal 'No go.'\n    at Context.<anonymous> (test/indexTest.js:26:49)\n    at processImmediate (node:internal/timers:466:21)"
+        "stack": "ReferenceError: ternaryCheckCity is not defined\n    at Context.<anonymous> (test/indexTest.js:26:7)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "ternaryCheckCity is not defined"
       }
     },
     {
       "title": "should return \"Thank you so much.\" if the tip is generous",
       "fullTitle": "index.js switchOnCharmFromTip() should return \"Thank you so much.\" if the tip is generous",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
-        "message": "expected undefined to equal 'Thank you so much.'",
-        "showDiff": true,
-        "expected": "Thank you so much.",
-        "stack": "AssertionError: expected undefined to equal 'Thank you so much.'\n    at Context.<anonymous> (test/indexTest.js:32:51)\n    at processImmediate (node:internal/timers:466:21)"
+        "stack": "ReferenceError: switchOnCharmFromTip is not defined\n    at Context.<anonymous> (test/indexTest.js:32:7)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "switchOnCharmFromTip is not defined"
       }
     },
     {
@@ -95,10 +74,8 @@
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "message": "expected undefined to equal 'Thank you.'",
-        "showDiff": true,
-        "expected": "Thank you.",
-        "stack": "AssertionError: expected undefined to equal 'Thank you.'\n    at Context.<anonymous> (test/indexTest.js:36:58)\n    at processImmediate (node:internal/timers:466:21)"
+        "stack": "ReferenceError: switchOnCharmFromTip is not defined\n    at Context.<anonymous> (test/indexTest.js:36:7)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "switchOnCharmFromTip is not defined"
       }
     },
     {
@@ -107,61 +84,21 @@
       "duration": 1,
       "currentRetry": 0,
       "err": {
-        "message": "expected undefined to equal 'Bye.'",
-        "showDiff": true,
-        "expected": "Bye.",
-        "stack": "AssertionError: expected undefined to equal 'Bye.'\n    at Context.<anonymous> (test/indexTest.js:40:64)\n    at processImmediate (node:internal/timers:466:21)"
+        "stack": "ReferenceError: switchOnCharmFromTip is not defined\n    at Context.<anonymous> (test/indexTest.js:40:7)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "switchOnCharmFromTip is not defined"
       }
     }
   ],
   "pending": [],
   "failures": [
     {
-      "title": "charges 20 dollars for a distance between 400 and 2000 feet",
-      "fullTitle": "index.js scuberGreetingForFeet() charges 20 dollars for a distance between 400 and 2000 feet",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "message": "expected undefined to equal 'That will be twenty bucks.'",
-        "showDiff": true,
-        "expected": "That will be twenty bucks.",
-        "stack": "AssertionError: expected undefined to equal 'That will be twenty bucks.'\n    at Context.<anonymous> (test/indexTest.js:8:46)\n    at processImmediate (node:internal/timers:466:21)"
-      }
-    },
-    {
-      "title": "charges 30 dollars for a distance over 2000 feet",
-      "fullTitle": "index.js scuberGreetingForFeet() charges 30 dollars for a distance over 2000 feet",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "message": "expected undefined to equal 'I will gladly take your thirty bucks.'",
-        "showDiff": true,
-        "expected": "I will gladly take your thirty bucks.",
-        "stack": "AssertionError: expected undefined to equal 'I will gladly take your thirty bucks.'\n    at Context.<anonymous> (test/indexTest.js:12:46)\n    at processImmediate (node:internal/timers:466:21)"
-      }
-    },
-    {
-      "title": "does not allow rides over 2500 feet",
-      "fullTitle": "index.js scuberGreetingForFeet() does not allow rides over 2500 feet",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "message": "expected undefined to equal 'No can do.'",
-        "showDiff": true,
-        "expected": "No can do.",
-        "stack": "AssertionError: expected undefined to equal 'No can do.'\n    at Context.<anonymous> (test/indexTest.js:16:46)\n    at processImmediate (node:internal/timers:466:21)"
-      }
-    },
-    {
       "title": "returns \"Ok, sounds good.\" when the city is NYC",
       "fullTitle": "index.js ternaryCheckCity() returns \"Ok, sounds good.\" when the city is NYC",
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "message": "expected undefined to equal 'Ok, sounds good.'",
-        "showDiff": true,
-        "expected": "Ok, sounds good.",
-        "stack": "AssertionError: expected undefined to equal 'Ok, sounds good.'\n    at Context.<anonymous> (test/indexTest.js:22:42)\n    at processImmediate (node:internal/timers:466:21)"
+        "stack": "ReferenceError: ternaryCheckCity is not defined\n    at Context.<anonymous> (test/indexTest.js:22:7)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "ternaryCheckCity is not defined"
       }
     },
     {
@@ -170,22 +107,18 @@
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "message": "expected undefined to equal 'No go.'",
-        "showDiff": true,
-        "expected": "No go.",
-        "stack": "AssertionError: expected undefined to equal 'No go.'\n    at Context.<anonymous> (test/indexTest.js:26:49)\n    at processImmediate (node:internal/timers:466:21)"
+        "stack": "ReferenceError: ternaryCheckCity is not defined\n    at Context.<anonymous> (test/indexTest.js:26:7)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "ternaryCheckCity is not defined"
       }
     },
     {
       "title": "should return \"Thank you so much.\" if the tip is generous",
       "fullTitle": "index.js switchOnCharmFromTip() should return \"Thank you so much.\" if the tip is generous",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
-        "message": "expected undefined to equal 'Thank you so much.'",
-        "showDiff": true,
-        "expected": "Thank you so much.",
-        "stack": "AssertionError: expected undefined to equal 'Thank you so much.'\n    at Context.<anonymous> (test/indexTest.js:32:51)\n    at processImmediate (node:internal/timers:466:21)"
+        "stack": "ReferenceError: switchOnCharmFromTip is not defined\n    at Context.<anonymous> (test/indexTest.js:32:7)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "switchOnCharmFromTip is not defined"
       }
     },
     {
@@ -194,10 +127,8 @@
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "message": "expected undefined to equal 'Thank you.'",
-        "showDiff": true,
-        "expected": "Thank you.",
-        "stack": "AssertionError: expected undefined to equal 'Thank you.'\n    at Context.<anonymous> (test/indexTest.js:36:58)\n    at processImmediate (node:internal/timers:466:21)"
+        "stack": "ReferenceError: switchOnCharmFromTip is not defined\n    at Context.<anonymous> (test/indexTest.js:36:7)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "switchOnCharmFromTip is not defined"
       }
     },
     {
@@ -206,10 +137,8 @@
       "duration": 1,
       "currentRetry": 0,
       "err": {
-        "message": "expected undefined to equal 'Bye.'",
-        "showDiff": true,
-        "expected": "Bye.",
-        "stack": "AssertionError: expected undefined to equal 'Bye.'\n    at Context.<anonymous> (test/indexTest.js:40:64)\n    at processImmediate (node:internal/timers:466:21)"
+        "stack": "ReferenceError: switchOnCharmFromTip is not defined\n    at Context.<anonymous> (test/indexTest.js:40:7)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "switchOnCharmFromTip is not defined"
       }
     }
   ],
@@ -217,7 +146,28 @@
     {
       "title": "gives customers a free sample if the ride is less than or equal to 400 feet",
       "fullTitle": "index.js scuberGreetingForFeet() gives customers a free sample if the ride is less than or equal to 400 feet",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "charges 20 dollars for a distance between 400 and 2000 feet",
+      "fullTitle": "index.js scuberGreetingForFeet() charges 20 dollars for a distance between 400 and 2000 feet",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "charges 30 dollars for a distance over 2000 feet",
+      "fullTitle": "index.js scuberGreetingForFeet() charges 30 dollars for a distance over 2000 feet",
       "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "does not allow rides over 2500 feet",
+      "fullTitle": "index.js scuberGreetingForFeet() does not allow rides over 2500 feet",
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     }
