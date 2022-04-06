@@ -14,33 +14,35 @@ function scuberGreetingForFeet(someValue) {
   if (someValue >2500) {
     return('No can do.');
   }
-  scuberGreetingForFeet(199);
-  scuberGreetingForFeet(1500);
-  scuberGreetingForFeet(2001);
-  scuberGreetingForFeet(2501);
- 
-  // let result;
-  // result=('That will be twenty bucks.')
-  //   (someFeet <= 2000 && someFeet >= 400) ? console.log(result) : null
-  
-  //     (someFeet > 2000) ? console.log('I will gladly take your thirty bucks.') : null
-  //     (someFeet>2500)? console.log('No can do.'):null
 }
-// scuberGreetingForFeet(199)
+scuberGreetingForFeet(199);
+scuberGreetingForFeet(1500);
+scuberGreetingForFeet(2001);
+scuberGreetingForFeet(2501);
 
-// function ternaryCheckCity(someFeet) {
-//   let result;
-//   result=('That will be twenty bucks.')
-//     (someFeet <= 2000 && someFeet >= 400) ? console.log(result) : null
+
+function ternaryCheckCity(someCity) {
   
-//       (someFeet > 2000) ? console.log('I will gladly take your thirty bucks.') : null
-//       (someFeet>2500)? console.log('No can do.'):null
+  
+  (someCity === 'NYC') ? console.log('Ok, sounds good.') : null;
+  (someCity !== 'NYC') ? console.log('No go.') :null;
   
 
-// }
-// ternaryCheckCity(1500)
-// ternaryCheckCity(2001)
+}
+ternaryCheckCity('NYC');
+ternaryCheckCity('Pittsburgh');
 
-// // function switchOnCharmFromTip(){
-// //   // Write your code here!
-// // }
+
+function switchOnCharmFromTip(someTip){
+  switch(someTip) {
+    case 'generous':
+     return('Thank you so much.') 
+      break;
+    case 'not as generous':
+      return('Thank you.') 
+      break;
+    default:
+      return('Bye.') 
+  }
+}
+switchOnCharmFromTip('generous');

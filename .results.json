@@ -2,12 +2,12 @@
   "stats": {
     "suites": 4,
     "tests": 9,
-    "passes": 4,
+    "passes": 7,
     "pending": 0,
-    "failures": 5,
-    "start": "2022-04-06T10:55:43.447Z",
-    "end": "2022-04-06T10:55:43.817Z",
-    "duration": 370
+    "failures": 2,
+    "start": "2022-04-06T11:48:53.846Z",
+    "end": "2022-04-06T11:48:54.230Z",
+    "duration": 384
   },
   "tests": [
     {
@@ -27,7 +27,7 @@
     {
       "title": "charges 30 dollars for a distance over 2000 feet",
       "fullTitle": "index.js scuberGreetingForFeet() charges 30 dollars for a distance over 2000 feet",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -41,21 +41,25 @@
     {
       "title": "returns \"Ok, sounds good.\" when the city is NYC",
       "fullTitle": "index.js ternaryCheckCity() returns \"Ok, sounds good.\" when the city is NYC",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: ternaryCheckCity is not defined\n    at Context.<anonymous> (test/indexTest.js:22:7)\n    at processImmediate (node:internal/timers:466:21)",
-        "message": "ternaryCheckCity is not defined"
+        "message": "expected undefined to equal 'Ok, sounds good.'",
+        "showDiff": true,
+        "expected": "Ok, sounds good.",
+        "stack": "AssertionError: expected undefined to equal 'Ok, sounds good.'\n    at Context.<anonymous> (test/indexTest.js:22:42)\n    at processImmediate (node:internal/timers:466:21)"
       }
     },
     {
       "title": "should return \"No go.\" if the destination city is not NYC",
       "fullTitle": "index.js ternaryCheckCity() should return \"No go.\" if the destination city is not NYC",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: ternaryCheckCity is not defined\n    at Context.<anonymous> (test/indexTest.js:26:7)\n    at processImmediate (node:internal/timers:466:21)",
-        "message": "ternaryCheckCity is not defined"
+        "message": "expected undefined to equal 'No go.'",
+        "showDiff": true,
+        "expected": "No go.",
+        "stack": "AssertionError: expected undefined to equal 'No go.'\n    at Context.<anonymous> (test/indexTest.js:26:49)\n    at processImmediate (node:internal/timers:466:21)"
       }
     },
     {
@@ -63,30 +67,21 @@
       "fullTitle": "index.js switchOnCharmFromTip() should return \"Thank you so much.\" if the tip is generous",
       "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: switchOnCharmFromTip is not defined\n    at Context.<anonymous> (test/indexTest.js:32:7)\n    at processImmediate (node:internal/timers:466:21)",
-        "message": "switchOnCharmFromTip is not defined"
-      }
+      "err": {}
     },
     {
       "title": "should return \"Thank you.\" if the tip is not as generous",
       "fullTitle": "index.js switchOnCharmFromTip() should return \"Thank you.\" if the tip is not as generous",
       "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: switchOnCharmFromTip is not defined\n    at Context.<anonymous> (test/indexTest.js:36:7)\n    at processImmediate (node:internal/timers:466:21)",
-        "message": "switchOnCharmFromTip is not defined"
-      }
+      "err": {}
     },
     {
       "title": "should return \"Bye.\" if anything else",
       "fullTitle": "index.js switchOnCharmFromTip() should return \"Bye.\" if anything else",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: switchOnCharmFromTip is not defined\n    at Context.<anonymous> (test/indexTest.js:40:7)\n    at processImmediate (node:internal/timers:466:21)",
-        "message": "switchOnCharmFromTip is not defined"
-      }
+      "err": {}
     }
   ],
   "pending": [],
@@ -94,51 +89,25 @@
     {
       "title": "returns \"Ok, sounds good.\" when the city is NYC",
       "fullTitle": "index.js ternaryCheckCity() returns \"Ok, sounds good.\" when the city is NYC",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: ternaryCheckCity is not defined\n    at Context.<anonymous> (test/indexTest.js:22:7)\n    at processImmediate (node:internal/timers:466:21)",
-        "message": "ternaryCheckCity is not defined"
+        "message": "expected undefined to equal 'Ok, sounds good.'",
+        "showDiff": true,
+        "expected": "Ok, sounds good.",
+        "stack": "AssertionError: expected undefined to equal 'Ok, sounds good.'\n    at Context.<anonymous> (test/indexTest.js:22:42)\n    at processImmediate (node:internal/timers:466:21)"
       }
     },
     {
       "title": "should return \"No go.\" if the destination city is not NYC",
       "fullTitle": "index.js ternaryCheckCity() should return \"No go.\" if the destination city is not NYC",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: ternaryCheckCity is not defined\n    at Context.<anonymous> (test/indexTest.js:26:7)\n    at processImmediate (node:internal/timers:466:21)",
-        "message": "ternaryCheckCity is not defined"
-      }
-    },
-    {
-      "title": "should return \"Thank you so much.\" if the tip is generous",
-      "fullTitle": "index.js switchOnCharmFromTip() should return \"Thank you so much.\" if the tip is generous",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: switchOnCharmFromTip is not defined\n    at Context.<anonymous> (test/indexTest.js:32:7)\n    at processImmediate (node:internal/timers:466:21)",
-        "message": "switchOnCharmFromTip is not defined"
-      }
-    },
-    {
-      "title": "should return \"Thank you.\" if the tip is not as generous",
-      "fullTitle": "index.js switchOnCharmFromTip() should return \"Thank you.\" if the tip is not as generous",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: switchOnCharmFromTip is not defined\n    at Context.<anonymous> (test/indexTest.js:36:7)\n    at processImmediate (node:internal/timers:466:21)",
-        "message": "switchOnCharmFromTip is not defined"
-      }
-    },
-    {
-      "title": "should return \"Bye.\" if anything else",
-      "fullTitle": "index.js switchOnCharmFromTip() should return \"Bye.\" if anything else",
       "duration": 1,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: switchOnCharmFromTip is not defined\n    at Context.<anonymous> (test/indexTest.js:40:7)\n    at processImmediate (node:internal/timers:466:21)",
-        "message": "switchOnCharmFromTip is not defined"
+        "message": "expected undefined to equal 'No go.'",
+        "showDiff": true,
+        "expected": "No go.",
+        "stack": "AssertionError: expected undefined to equal 'No go.'\n    at Context.<anonymous> (test/indexTest.js:26:49)\n    at processImmediate (node:internal/timers:466:21)"
       }
     }
   ],
@@ -160,13 +129,34 @@
     {
       "title": "charges 30 dollars for a distance over 2000 feet",
       "fullTitle": "index.js scuberGreetingForFeet() charges 30 dollars for a distance over 2000 feet",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "does not allow rides over 2500 feet",
       "fullTitle": "index.js scuberGreetingForFeet() does not allow rides over 2500 feet",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return \"Thank you so much.\" if the tip is generous",
+      "fullTitle": "index.js switchOnCharmFromTip() should return \"Thank you so much.\" if the tip is generous",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return \"Thank you.\" if the tip is not as generous",
+      "fullTitle": "index.js switchOnCharmFromTip() should return \"Thank you.\" if the tip is not as generous",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return \"Bye.\" if anything else",
+      "fullTitle": "index.js switchOnCharmFromTip() should return \"Bye.\" if anything else",
       "duration": 0,
       "currentRetry": 0,
       "err": {}
