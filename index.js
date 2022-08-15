@@ -1,8 +1,6 @@
 function scuberGreetingForFeet(someValue) {
 
-
- 
-  if (someValue <= 400) {
+ if (someValue <= 400) {
     return('This one is on me!');
   }
   if (someValue >400 && someValue<2000) {
